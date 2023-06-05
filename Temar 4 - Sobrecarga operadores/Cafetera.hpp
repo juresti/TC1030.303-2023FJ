@@ -13,6 +13,9 @@ public:
     string toString();
     friend int operator +(Cafetera &c1,Cafetera &c2);
     friend int operator +(int,Cafetera &c);
+
+    friend bool operator <(Cafetera &c1,Cafetera &c2);
+    friend Cafetera operator *(Cafetera &c1,Cafetera &c2);
 };
 
 #endif

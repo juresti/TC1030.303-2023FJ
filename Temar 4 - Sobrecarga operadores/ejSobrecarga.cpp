@@ -15,5 +15,12 @@ int main(int argc, char const *argv[])
     int total = c1 + c2 + c3 + c4;
     cout << "Con tus tres cafeteras puedes hacer " << 
         to_string(total) << " tazas por minuto\n";
+
+    if (c1 < c2) cout << "La cafetera 2 tiene mayor capacidad\n";
+    else cout << "La cafetera 1 tiene mayor capacidad\n";
+
+    Cafetera nueva = c1 * c2;
+    cout << nueva.toString() << endl;
+
     return 0;
 }
